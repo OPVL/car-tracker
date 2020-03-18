@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "opvl/car-tracker",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Platform to track upgrades, mileage and maintenance on your car.",
     "keywords": [
-        "framework",
-        "laravel"
+        "vehicle",
+        "modified"
     ],
     "license": "MIT",
     "require": {
@@ -60,6 +60,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "phpcs": "vendor/bin/phpcs --standard=./phpcs.xml --runtime-set ignore_warnings_on_exit true ./app ./routes",
+        "phpcbf": "vendor/bin/phpcbf --standard=./phpcs.xml ./app ./routes",
+        "phpmd": "vendor/bin/phpmd . text ./phpmd.xml --exclude=vendor/*,public/*,storage/*,resources/*,*.blade.php"
     }
 }

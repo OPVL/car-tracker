@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\vehicle;
+use App\Manufacturer;
 use Illuminate\Http\Request;
 
-class VehicleController extends Controller
+class ManufacturerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,28 +31,28 @@ class VehicleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(vehicle $vehicle): \Illuminate\Http\Response
+    public function show(Manufacturer $manufacturer): \Illuminate\Http\Response
     {
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(vehicle $vehicle): \Illuminate\Http\Response
+    public function edit(Manufacturer $manufacturer): \Illuminate\Http\Response
     {
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, vehicle $vehicle): \Illuminate\Http\Response
+    public function update(Request $request, Manufacturer $manufacturer): \Illuminate\Http\Response
     {
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(vehicle $vehicle): \Illuminate\Http\Response
+    public function destroy(Manufacturer $manufacturer): \Illuminate\Http\Response
     {
     }
 }

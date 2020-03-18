@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
-class Manufacturer extends EloquentModel
+class Make extends EloquentModel
 {
     public function models(): HasMany
     {

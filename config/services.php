@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'vpic' => [
+        'base_url' => env('VPIC_BASE_URL', 'https://vpic.nhtsa.dot.gov/api/vehicles/'),
+    ],
+
 ];

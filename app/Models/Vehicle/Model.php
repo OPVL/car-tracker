@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Model extends EloquentModel
 {
-    public function manufacturer(): BelongsTo
+    public function make(): BelongsTo
     {
-        return $this->belongsTo(Manufacturer::class);
+        return $this->belongsTo(Make::class);
     }
 
     public function vehicles(): HasMany
